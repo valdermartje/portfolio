@@ -1,0 +1,15 @@
+footer {
+    margin: var(--standard-distance) 0;
+    position: relative;
+}
+
+footer a {
+    display: inline;
+    color: var(--white);
+    margin-left: 3px;
+    font-family: Barlow Black, sans-serif;
+}
+
+.footer a:hover {
+    color: var(--purple) !important;
+}

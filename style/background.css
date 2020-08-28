@@ -1,0 +1,82 @@
+.card-top {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    width: 30%;
+    height: 60vh;
+    background: var(--white);
+}
+
+.container-photo-me {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+img.photo-me {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+h2.rotate-270 {
+    color: var(--black);
+    right: -20%;
+    bottom: 25%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 60px;
+    transform: rotate(90deg);
+}
+
+
+/*.container-photo-me {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 17%;*/
+/*    width: 30%;*/
+/*    height: 70vh;*/
+/*    background: var(--white);*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    display: flex;*/
+/*}*/
+
+/*.container-photo-me::after {*/
+/*    content: "portfolio";*/
+/*    color: var(--black);*/
+/*    font-size: 100px;*/
+/*    z-index: 9999;*/
+/*    font-weight: bold;*/
+/*    transform: rotate(90deg);*/
+/*    right: -40%;*/
+/*    bottom: 30%;*/
+/*    position: absolute;*/
+/*}*/
+
+/*img.photo-me {*/
+/*    width: 90%;*/
+/*    height: 50vh;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    opacity: 60%;*/
+/*}*/
+
+/*img.photo-me.img-left {*/
+/*    left: 0;*/
+/*}*/
+
+/*img.photo-me.img-right {*/
+/*    right: 0;*/
+/*}*/
+
+/*h2.rotate-270 {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    bottom: 10%;*/
+/*    transform: rotate(90deg);*/
+/*    font-size: 80px;*/
+/*    font-weight: bold;*/
+/*    color: var(--black);*/
+
+/*}*/

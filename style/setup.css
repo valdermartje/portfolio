@@ -1,0 +1,157 @@
+/* variables */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+
+    --purple: #5918DF;
+    --light-purple: #997CD2;
+
+    --success: #A3E461;
+    --failed: rgb(228, 97, 97);
+
+    --header-color: var(--black);
+    --text-color: var(--black);
+
+    --transition-duration: 300ms ease-in-out;
+    --standard-distance: 10px;
+}
+
+/* Barlow Black */
+@font-face {
+    font-family: Barlow Black;
+    src: url("../Barlow/Barlow-Black.ttf") ;
+}
+
+/* Barlow Italian Light */
+@font-face {
+    font-family: Barlow Light Italian;
+    src: url("../Barlow/Barlow-LightItalic.ttf") ;
+}
+
+/* selection */
+::selection {
+    background: var(--purple);
+    color: var(--white);
+}
+::-moz-selection {
+    background: var(--purple);
+    color: var(--white);
+}
+
+/* headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Barlow Black;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 300%;
+    padding: var(--standard-distance) 0;
+}
+
+/* header */
+h1 {
+    font-size: 3.5rem;
+}
+
+/* subheader */
+h3 {
+    margin-top: 5vh;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: var(--black);
+    font-family: Barlow Light Italian;
+    font-size: 1.2rem;
+    width: -moz-available;
+    width: max-content;
+    transition: var(--transition-duration);
+}
+
+/* text */
+p, span, ul {
+    color: var(--black);
+    font-family: Barlow Light Italian;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    transition: var(--transition-duration);
+}
+
+a:hover {
+    color: var(--black);
+}
+
+p {
+    font-style: italic;
+    display: block;
+    margin-bottom: var(--standard-distance);
+}
+
+p span {
+    margin-left: 3px;
+}
+
+span {
+    font-weight: bold;
+    font-style: normal;
+    font-family: Barlow Black;
+    color: var(--purple)
+}
+
+button {
+    font-weight: bold;
+    font-style: normal;
+    font-family: Barlow Light Italian;
+    text-transform: uppercase;
+}
+
+html {
+    cursor: url("https://img.icons8.com/metro/344/circled-dot.png") 39 39, auto;
+}
+
+/* body */
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: var(--purple);
+    background: linear-gradient(to bottom, var(--purple), var(--light-purple)) no-repeat fixed;
+    color: var(--white);
+    scroll-behavior: smooth;
+    text-transform: uppercase;
+    transition: var(--transition-duration);
+}
+
+.sub {
+    margin-left: 20px;
+}
+
+ion-icon.md.hydrated {
+    height: 25px;
+    width: 25px;
+    margin-left: var(--standard-distance);
+}
+
+@media only screen and (max-width: 700px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Barlow Black;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    p, a, span, ul, input, textarea {
+        font-size: 0.8rem !important;
+    }
+
+}

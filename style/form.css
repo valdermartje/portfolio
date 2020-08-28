@@ -1,0 +1,71 @@
+.inputName,
+.inputEmail,
+.inputSubject,
+.inputMessage {
+    position: relative;
+}
+
+.inputName input,
+.inputEmail input,
+.inputSubject input,
+.inputMessage textarea {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: var(--standard-distance) 0;
+    border: 1px solid var(--black);
+    outline: unset;
+
+    font-weight: bold;
+    font-style: normal;
+    font-family: Barlow Black, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.inputName input[value=""]+ p,
+.inputEmail input[value=""] + p,
+.inputSubject input[value=""] + p,
+.inputMessage textarea[value=""] + p {
+    top: 30%;
+}
+
+.inputName input:not([value=""] )+ p,
+.inputEmail input:not([value=""]) + p,
+.inputSubject input:not([value=""]) + p,
+.inputMessage textarea:not([value=""]) + p {
+    top: 0;
+}
+
+.inputName p,
+.inputEmail p,
+.inputSubject p,
+.inputMessage p {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    z-index: 999;
+    background: var(--white);
+    padding: 0 10px;
+    transition: var(--transition-duration);
+}
+
+.inputMessage textarea {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.button {
+    width: 40%;
+    border: 1px solid var(--black);
+    padding: 15px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: var(--transition-duration);
+}
+
+.button:hover {
+    background: var(--purple);
+    color: var(--white);
+}

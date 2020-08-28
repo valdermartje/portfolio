@@ -1,0 +1,59 @@
+.menu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    display: block;
+    padding: 20px 0;
+    z-index: 9;
+    transform: var(--transition-duration);
+}
+
+.menu .logo {
+    position: relative;
+    height: 90px;
+    max-height: 90px;
+    max-width: 80px;
+}
+.menu-icon {
+    cursor: pointer;
+}
+
+.streep {
+    width: 100px;
+    height: 5px;
+    background: var(--white);
+    margin: 10px 0;
+    transition: var(--transition-duration);
+}
+
+.dropdown {
+    transition: var(--transition-duration);
+}
+
+.dropdown .container {
+    top: var(--standard-distance);
+}
+
+.dropdown a {
+    color: var(--white);
+    display: block;
+    font-size: 3rem !important;
+    z-index: 1;
+    font-family: Barlow Black, sans-serif;
+    transition: var(--transition-duration);
+}
+
+.dropdown a:hover {
+    color: var(--black)
+}
+
+.dropdown a.margin-top-40 {
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu .logo {
+        left: 0;
+    }
+}
