@@ -1,12 +1,17 @@
 import React from 'react';
+import Header from "../components/header";
 
 export default class PageNotFound extends React.Component {
     render() {
         return (
             <div className={"container"}>
-                <h2>&#x3C;/404 - Page not found&#x3E;</h2>
-                <span>Sorry, we can redirect you if you want to.</span>
-                 <a href={"/"}>Home</a>
+                <Header headerName={"404 - Page not found"} />
+                <p style={{
+                    color: `var(--white)`
+                }}>Sorry, we can redirect you if you want to.</p>
+                 <a style={{
+                     color: `var(--white)`
+                 }} href={"./"}>Home</a>
             </div>
         );
     }
